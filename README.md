@@ -10,8 +10,9 @@ Think of SkyGiraffe as a **black-box enterprise data connector** that enables th
 * Data Connectivity: Pulls and updates data from backend systems, e.g., Oracle, SAP, Salesforce, MSSQL, REST APIs, Office 365, Google apps and many other systems. 
 * Create Applications: Build simple and complex workflows that involve one or more systems and enables read and write operations with the SkyGiraffe studio. 
 
-Now to let you get started quickly on SkyGiraffe, we have created a generic Google sheets REST service that allows you to write, retrieve and update data on Google sheets, thereby using it as a SkyGiraffe data source.
-SkyGiraffe supports REST, so this REST service becomes your data source.Once you have designed the app and workflow, you can plugin the actual enterprise data source.Pretty simple, isn't it.
+Now to let you get started quickly on SkyGiraffe, we have created a generic Google sheets REST service that allows you to write, retrieve and update data on Google sheets, thereby using it as a SkyGiraffe REST data source.
+
+Once you have designed the app and workflow, you can plugin the actual enterprise data source.Pretty simple, isn't it.
 
 ### OK, so far so good, how do I get started?
 
