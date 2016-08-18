@@ -40,7 +40,8 @@ The following POST request adds a row to Google sheet:
 `?action=post&sheetname=SGTest`
 
 Sample json payload example:
-{"Col1Key":"Col1Val", "Col2Key":"Col2Val", "Col3Key":"Col3Val","Col4Key":"Col4Val", "Col5Key":"Col5Val"}
+
+`{"Col1Key":"Col1Val", "Col2Key":"Col2Val", "Col3Key":"Col3Val","Col4Key":"Col4Val", "Col5Key":"Col5Val"}`
 
 As you would expect, a new row will be added to the Google sheet, with keys as column headers. AN `id` column is automatically added to a row.
 
@@ -51,7 +52,8 @@ The following POST request retrieves rows from the Google sheet:
 `?action=get&sheetname=SGTest`
 
 Sample json payload example:
-[{"key": "ColKey","val": "ColVal","operation": "notequals"},{"key": "ColKey","val": "ColVal","operation": "equals"}]
+
+`[{"key": "ColKey","val": "ColVal","operation": "notequals"},{"key": "ColKey","val": "ColVal","operation": "equals"}]`
 
 This needs some explaining. The JSON payload represents a filter to be able to select one or multiple rows from the google sheet. The field description is as follows:
 * key - This is the column header
@@ -72,10 +74,12 @@ id	FirstName	LastName
 5	Sam		Johnson
 
 We want to select persons with first names John and with last name Doe, the JSON payload will be:
-[{"key": "FirstName","val": "John","operation": "equals"},{"key": "LastName","val": "Doe","operation": "equals"}]
+
+`[{"key": "FirstName","val": "John","operation": "equals"},{"key": "LastName","val": "Doe","operation": "equals"}]`
 
 The same result can be retrieved with the following JSON payload:
-[{"key": "FirstName","val": "John","operation": "equals"},{"key": "LastName","val": "Curry","operation": "notequals"}]
+
+`[{"key": "FirstName","val": "John","operation": "equals"},{"key": "LastName","val": "Curry","operation": "notequals"}]`
 
 **Update row in sheet**
 
@@ -84,7 +88,8 @@ The following POST request updates a row:
 ?action=update&sheetname=SGTest
 
 Sample JSON payload example:
-{"id":"3","ColKey":"ColVal"}
+
+`{"id":"3","ColKey":"ColVal"}`
 
 The above request simply updates the `ColKey` value for row with `id` 3 to `ColVal`.
 
