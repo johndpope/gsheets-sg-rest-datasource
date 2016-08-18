@@ -28,10 +28,10 @@ Good. What follows is lengthy but simple.
 Just create a new sheet and rename it to 'SGTest'. Leave it empty for now.
 
 1. Now, go to Tools --> Script Editor on your sheets and open it.
-![SkyGiraffe applications on Slack] (path)
-2. Copy the code from here (in Code.gs) and paste it in your script editor. Please update the google sheet id in Code.gs to the id of youyr google sheet. You will have to make 4 edits in total.
+![Google sheets script editor] (https://download.skygiraffe.com/publicImages/ScriptEditor.png)
+2. Copy the code from here (in Code.gs) and paste it in your script editor. Please update the google sheet id in Code.gs to the id of your google sheet. You will have to make 4 edits in total.
 3. Deploy it as a web app. When you do this, you will get the url of the REST service. Copy it and save it somewhere.
-![SkyGiraffe applications on Slack] (path)
+![Google sheets deploy] (https://download.skygiraffe.com/publicImages/Deploy_as_webapp2.png)
 
 Next step is to understand the service requests and test it out.
 
